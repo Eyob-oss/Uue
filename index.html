@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eyob Tesfaye | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins :wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css "/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+
+  <!-- Dark Mode Toggle -->
+  <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Eyob<span>Tesfaye</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm Eyob Tesfaye</h1>
+      <h2>I'm a <span id="typewriter"></span></h2>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <img src="https://via.placeholder.com/300x300.png?text=Me " alt="Eyob Tesfaye">
+      <div class="bio">
+        <h2>About Me</h2>
+        <p>
+          I'm a passionate Video Editor, Digital Creator, Web Developer, and Graphic Designer.
+          With over 5 years of experience in creative industries, I bring ideas to life through visuals and code.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <i class="fas fa-video"></i>
+          <h3>Video Editing</h3>
+          <p>Creating engaging videos with precision and creativity.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-camera-retro"></i>
+          <h3>Digital Content</h3>
+          <p>Producing high-quality digital media for brands and influencers.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-code"></i>
+          <h3>Web Development</h3>
+          <p>Building fast, responsive, and modern websites from scratch.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Graphic Design</h3>
+          <p>Designing eye-catching visuals that speak volumes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2>My Work</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/400x300.png?text=Project+1 " alt="Project 1" onclick="openModal(this.src)">
+        <img src="https://via.placeholder.com/400x300.png?text=Project+2 " alt="Project 2" onclick="openModal(this.src)">
+        <img src="https://via.placeholder.com/400x300.png?text=Project+3 " alt="Project 3" onclick="openModal(this.src)">
+        <img src="https://via.placeholder.com/400x300.png?text=Project+4 " alt="Project 4" onclick="openModal(this.src)">
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Lightbox -->
+  <div id="modal" class="modal">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="socials">
+        <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i> Email Me</a>
+        <a href="https://linkedin.com/in/eyobtesfaye " target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        <a href="https://instagram.com/eyobtesfaye " target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Eyob Tesfaye. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
